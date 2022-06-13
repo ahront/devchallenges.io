@@ -1,0 +1,47 @@
+.default {
+    color: #3F3F3F;
+    background-color: '#E0E0E0';
+    border: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 3px 0px #33333333;
+}
+
+.default:hover, .default:focus {
+    background-color: #AEAEAE;
+}
+
+.outline {
+    color: #3D5AFE;
+    background-color: white;
+    border: 1px solid #3D5AFE;
+    box-shadow: none;
+}
+
+.outline:hover, .outline:focus {
+    background-color: #2962FF1A;
+}
+
+.text {
+    background-color: white;
+    color: #3D5AFE;
+    box-shadow: none;
+}
+
+.text:hover, .text:focus {
+    background-color: #2962FF1A;
+}
+
+.disableShadow {
+    box-shadow: none;
+}
+
+.disabled {
+    color: #9E9E9E;
+    background-color: #E0E0E0;
+}
+
+.disabled.text {
+    background-color: white;
+}

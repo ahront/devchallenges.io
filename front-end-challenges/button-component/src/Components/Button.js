@@ -1,7 +1,13 @@
-function Button(props) {
+import '../App.css'
+
+const Button = props => {
+    const {text, variant, disableShadow, disabled} = props
     return (
-        <button>
-            {props.value}
+        <button className=
+            {`default ${variant} 
+            ${disableShadow && "disableShadow"} 
+            ${disabled && 'disabled'}`}>
+            {text}
         </button>
     )
 }
