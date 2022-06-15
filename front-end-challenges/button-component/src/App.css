@@ -1,47 +1,29 @@
-.default {
-    color: #3F3F3F;
-    background-color: '#E0E0E0';
-    border: none;
-    font-size: 20px;
-    padding: 10px 20px;
-    border-radius: 5px;
-    box-shadow: 0px 2px 3px 0px #33333333;
+
+h1, h2, p {
+    margin: 0;
 }
 
-.default:hover, .default:focus {
-    background-color: #AEAEAE;
+body {
+    margin-left: 25%;
 }
 
-.outline {
-    color: #3D5AFE;
-    background-color: white;
-    border: 1px solid #3D5AFE;
-    box-shadow: none;
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: space-between;
 }
 
-.outline:hover, .outline:focus {
-    background-color: #2962FF1A;
+.container h2 {
+    margin-top: 1rem;
 }
 
-.text {
-    background-color: white;
-    color: #3D5AFE;
-    box-shadow: none;
+.button-type {
+    display: flex;
+    gap: 3rem;
 }
 
-.text:hover, .text:focus {
-    background-color: #2962FF1A;
-}
-
-.disableShadow {
-    box-shadow: none;
-}
-
-.disabled {
-    color: #9E9E9E;
-    background-color: #E0E0E0;
-}
-
-.disabled.text {
-    background-color: white;
+.button-type p {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
 }

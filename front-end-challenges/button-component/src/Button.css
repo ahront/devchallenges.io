@@ -1,0 +1,116 @@
+.default {
+    color: #3F3F3F;
+    background-color: '#E0E0E0';
+    border: none;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 3px 0px #33333333;
+}
+
+.default:hover, .default:focus {
+    background-color: #AEAEAE;
+}
+
+/* button type */
+
+.outline {
+    color: #3D5AFE;
+    background-color: white;
+    border: 1px solid #3D5AFE;
+    box-shadow: none;
+}
+
+.outline:hover, .outline:focus {
+    background-color: #2962FF1A;
+}
+
+.text {
+    background-color: white;
+    color: #3D5AFE;
+    box-shadow: none;
+}
+
+.text:hover, .text:focus {
+    background-color: #2962FF1A;
+}
+
+.disableShadow {
+    box-shadow: none;
+}
+
+.disabled {
+    color: #9E9E9E;
+    background-color: #E0E0E0;
+    box-shadow: none;
+}
+
+.disabled.text {
+    background-color: white;
+}
+
+/* button size */
+
+.sm {
+    padding: 5px 10px;
+    width: 90px;
+    height: 30px;
+    font-size: 14px;
+}
+
+.md {
+    padding: 5px 20px;
+    width: 100px;
+    height: 40px;
+    font-size: 14px;
+}
+
+.lg {
+    padding: 5px 30px;
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+}
+
+/* button color */
+
+.default-color {
+    color: #3F3F3F; 
+    background: #E0E0E0;
+} 
+
+.default-color:hover, .default-color:focus {
+    color: #3F3F3F;
+    background: #AEAEAE;
+}
+
+.primary-color {
+    color: white;
+    background: #2962FF;
+
+}
+
+.primary-color:hover, .primary-color:focus {
+    color: white;
+    background: #0039CB;
+}
+
+.secondary-color {
+    color: white;
+    background: #455A64;
+}
+
+.secondary-color:hover, .secondary-color:focus {
+    color: white;
+    background: #1C313A;
+}
+
+.danger-color {
+    color: white;
+    background: #D32F2F;
+}   
+
+.danger-color:hover, .danger-color:focus {
+    color: white;
+    background: #9A0007;
+}
