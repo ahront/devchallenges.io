@@ -49,7 +49,26 @@ const App = () => {
 
           <h2>Buttons with icons:</h2>
           <div className='button-type'>
-            
+            <div>
+              <p>{"<Button startIcon='add_shopping_cart' />"}</p>
+              <Button startIcon='add_shopping_cart' />
+            </div>
+            <div>
+              <p>{"<Button startIcon='alarm_add' />"}</p>
+              <Button startIcon='alarm_add' />
+            </div>
+            <div>
+              <p>{"<Button endIcon='alarm_off' />"}</p>
+              <Button endIcon='alarm_off' />
+            </div>
+            <div>
+              <p>{"<Button endIcon='attachment' />"}</p>
+              <Button endIcon='attachment' />
+            </div>
+            <div>
+              <p>{"<Button endIcon='attach_money' />"}</p>
+              <Button endIcon='attach_money' />
+            </div>
           </div>
           
           <h2>Button sizes:</h2>

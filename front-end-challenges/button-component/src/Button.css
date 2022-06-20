@@ -1,10 +1,21 @@
+.button-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-text p {
+    margin: 0;
+}
+
 .default {
     color: #3F3F3F;
     background-color: '#E0E0E0';
     border: none;
     font-size: 20px;
     border-radius: 5px;
-    padding: 10px 20px;
+    padding: 0.5em 1em;
     box-shadow: 0px 2px 3px 0px #33333333;
 }
 
@@ -51,8 +62,13 @@
 
 /* button size */
 
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
 .sm {
-    padding: 5px 10px;
     width: 90px;
     height: 30px;
     font-size: 14px;

@@ -1,8 +1,17 @@
 import '../Button.css'
 
 const Button = props => {
-    const {text="Default", variant=null, disableShadow=null, disabled=null, size=null, color=null} = props
-    return (
+    const {
+        text="Default", 
+        variant=null, 
+        disableShadow=null, 
+        disabled=null, 
+        size=null, 
+        color=null,
+        startIcon=null,
+        endIcon=null,} = props
+    
+        return (
         <button className=
             {`default 
             ${variant && variant} 
@@ -11,7 +20,11 @@ const Button = props => {
             ${size === 'sm' ? 'sm' : size === 'md' ? 'md' : size === "lg" ? 'lg' : ""}
             ${color && `${color}-color`}`
             } >
-            {text}
+            <div className='button-text'>
+                {startIcon && <p className='material-icons'>{startIcon}</p>}
+                <p>{text}</p>
+                {endIcon && <p className='material-icons'>{endIcon}</p>}
+            </div>
         </button>
     )
 }
