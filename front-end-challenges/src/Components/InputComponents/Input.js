@@ -1,22 +1,41 @@
 import styled, {css} from 'styled-components'
-import {Add, AlternateEmail, AttachFile, Backspace, Autorenew, Bedtime, Ballot, Biotech, Bluetooth, BluetoothDrive, Calculate, Book, Brush, Build, Call, Cancel, Check, Coffee, ElectricCar} from "@styled-icons/material"
+import {
+    Add, 
+    AlternateEmail, 
+    AttachFile, 
+    Backspace, 
+    Autorenew, 
+    Bedtime, 
+    Ballot, 
+    Biotech, 
+    Bluetooth, 
+    BluetoothDrive, 
+    Calculate, 
+    Book, 
+    Brush, 
+    Build, 
+    Call, 
+    Cancel, 
+    Check, 
+    Coffee, 
+    ElectricCar} from "@styled-icons/material"
 
 const Input = ({
-    error=null, 
-    disabled=null,
-    helperText=null, 
-    value=null, size=null, 
-    fullwidth=null, 
-    startIcon=null, 
-    endIcon=null, 
-    multiline=null 
+    error = null, 
+    disabled = null,
+    helperText = null, 
+    value = null,
+    size = null, 
+    fullwidth = null, 
+    startIcon = null, 
+    endIcon = null, 
+    multiline = null 
     }) => {
     
-    
 
-    /* shared styles for input and textarea */
+    /* shared styles for input and text-area */
 
-    const SharedStyle = css`
+    const SharedStyles = css`
          
         /* default input and text-area styles */
         border: 1px solid #828282;
@@ -24,7 +43,6 @@ const Input = ({
         border-radius: 8px;
         padding-left: 10px;
         outline: none;
-
 
         &:hover {
             border: 1px solid #333333;
@@ -65,10 +83,9 @@ const Input = ({
     `
     
     const Input = styled.input`
-        /* default input styles */
-        
-        ${SharedStyle}
+        ${SharedStyles}
 
+        /* default input styles */ 
         height: 56px;
 
         /* small input styles */
@@ -79,7 +96,6 @@ const Input = ({
         }
 
         /* medium input styles */
-
         ${size === "md" && 
             `
                 height: 56px;
@@ -87,7 +103,6 @@ const Input = ({
         }
 
         /* fullwidth input styles */
-
         ${fullwidth && 
             `
                 width: 100%;
@@ -95,7 +110,6 @@ const Input = ({
         }
 
         /* start icon styles */
-
         ${startIcon && 
             `
                 padding-left: 35px;
@@ -105,7 +119,9 @@ const Input = ({
     `
 
     const TextArea = styled.textarea`
-        ${SharedStyle}
+        ${SharedStyles}
+
+        /* default textarea styles */
         height: calc(${multiline} * 56px);
         resize: none;
         padding: 10px 0px 0px 10px;
@@ -147,7 +163,8 @@ const Input = ({
     `
 
     const generateRandomIcon = () => {
-        const icons = [Add, 
+        const icons = [
+            Add, 
             AlternateEmail, 
             AttachFile, 
             AlternateEmail, 
@@ -167,9 +184,10 @@ const Input = ({
             Cancel,
             Check,
             Coffee,
-            ElectricCar]
-        const genIcon = icons[Math.floor(Math.random() * icons.length)]
-        return styled(genIcon)`
+            ElectricCar
+        ]
+        const genRandomIcon = icons[Math.floor(Math.random() * icons.length)]
+        return styled(genRandomIcon)`
             color: gray;
             `
     }

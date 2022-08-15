@@ -1,17 +1,21 @@
 import Input from './InputComponents/Input'
 import "../InputComponenetStyles.css"
+
 const InputComponent = () => {
+    
+    /* input attributes */
     const error = true
     const disabled = true
     const fullwidth = true
     const startIcon = true
     const endIcon = true
+    
     return (
         <div>
             <content>
-                <header>
+                <div>
                     <h1>Inputs</h1>
-                </header>
+                </div>
                 <div class="flex-container">
                     <article>
                         <p>{"<Input />"}</p>
@@ -40,7 +44,6 @@ const InputComponent = () => {
                         <label>Label</label>
                         <Input helperText="Some interesting text" error />
                     </article>
-
                 </div>
                 <div class="flex-container">
                     <article>
