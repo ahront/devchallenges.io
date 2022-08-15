@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import InputComponent from './Components/InputComponent';
 import ButtonComponent from './Components/ButtonComponent';
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
 import Windbnb from './Components/Windbnb';
 import TodoApp from './Components/TodoApp';
@@ -18,7 +18,7 @@ import GitHubJobs from './Components/GitHubJobs';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
+  <HashRouter>
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="/button-component" element={<ButtonComponent />} />
@@ -30,7 +30,7 @@ root.render(
       <Route path="/wheather-app" element={<WheatherApp />} />
       <Route path="/github-jobs" element={<GitHubJobs />} />
     </Routes>
-  </BrowserRouter>
+  </HashRouter>
 );
 
 
