@@ -1,0 +1,17 @@
+body {
+    margin: 25px;
+}
+
+@media screen and (min-width: 600px){
+    content {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-left: 20%;
+    }
+
+    .flex-container {
+        display: flex;
+        gap: 4rem;
+    }
+}
